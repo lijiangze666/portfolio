@@ -1,7 +1,6 @@
 import type {Metadata} from "next";
 import "./globals.css";
-import { ThemeProvider } from "./provider";
-
+import { ThemeProvider } from "@/app/providers";
 
 export const metadata: Metadata = {
     title: "Leejz's Portfolio",
