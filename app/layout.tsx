@@ -1,8 +1,7 @@
 import type {Metadata} from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/app/providers";
-import { Inter,Rethink_Sans } from "next/font/google";
-const rethinkSans = Rethink_Sans({ subsets: ["latin"] });
+import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

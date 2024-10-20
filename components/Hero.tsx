@@ -49,7 +49,19 @@ const Hero = () => {
                         />
                     </a>
                 </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+                     className="pointer-events-none absolute inset-0 h-full w-full -z-10 mt-10">
+                    <circle className="stroke-black/20 stroke-1 dark:stroke-white/20" cx="50%" cy="50%" r="310"
+                            fill="none"
+                            stroke-dasharray="4 4"></circle>
+                    <circle className="stroke-black/10 stroke-1 dark:stroke-white/10" cx="50%" cy="50%" r="360"
+                            fill="none" stroke-dasharray="4 4"></circle>
+
+                </svg>
+
             </div>
+
+
         </div>
     );
 };

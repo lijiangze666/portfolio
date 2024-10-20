@@ -84,15 +84,3 @@
     }
 }
 
-.rotating-circle {
-    animation: rotate 5s linear infinite; /* 动画效果 */
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg) translateX(100px) rotate(0deg); /* 初始位置 */
-    }
-    100% {
-        transform: rotate(360deg) translateX(100px) rotate(-360deg); /* 旋转360度 */
-    }
-}
