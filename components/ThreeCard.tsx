@@ -5,8 +5,9 @@ import React from "react";
 import {CardBody, CardContainer, CardItem} from "@/components/ui/3d-card";
 import Link from "next/link";
 import {FlipWords} from "@/components/ui/FilpWords";
-import { Ma_Shan_Zheng } from "next/font/google";
-const maShanZheng = Ma_Shan_Zheng({weight:"400",subsets:['latin']})
+import {Ma_Shan_Zheng} from "next/font/google";
+
+const maShanZheng = Ma_Shan_Zheng({weight: "400", subsets: ['latin']})
 
 export function ThreeCard() {
     const names = ["Li Jiang Ze", "李姜泽"];
@@ -37,12 +38,36 @@ export function ThreeCard() {
                     <div>
                     </div>
                 </CardItem>
-                <div className="flex justify-between items-center mt-4">
+                <div className="relative flex flex-col justify-between items-center mt-4">
                     <CardItem
                         translateZ="20"
-                        className="text-xl font-bold text-neutral-600 dark:text-white text-left w-full"
+                        className="text-2xl font-bold text-neutral-600 dark:text-white text-left w-full"
                     >
                         I'm a:
+                    </CardItem>
+                    <CardItem translateZ="20" as="p"
+                              className="flex px-4 py-2 dark:text-white ml-auto text-xl">
+                        Front-end  Developer
+                    </CardItem>
+                    <CardItem translateZ="20" as="p"
+                              className="flex px-4 py-2 dark:text-white ml-auto text-xl">
+                        Java Developer
+                    </CardItem>
+                    <CardItem translateZ="20" as="p"
+                              className="flex px-4 py-2 dark:text-white ml-auto text-xl">
+                        Web3 Developer
+                    </CardItem>
+                    <CardItem translateZ="20" as="p"
+                              className="flex px-4 py-2 dark:text-white ml-auto text-xl">
+                        Guitarist
+                    </CardItem>
+                    <CardItem translateZ="20" as="p"
+                              className="flex px-4 py-2 dark:text-white ml-auto text-xl">
+                        Photographer
+                    </CardItem>
+                    <CardItem translateZ="50"
+                              className="absolute bottom-0 left-0 px-4 dark:text-white">
+                        <Image src="/avatar-modified.jpg" alt="avatar" width={100} height={100}/>
                     </CardItem>
                 </div>
 
