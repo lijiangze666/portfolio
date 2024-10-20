@@ -1,6 +1,8 @@
 import type {Metadata} from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/app/providers";
+import { Inter,Rethink_Sans } from "next/font/google";
+const rethinkSans = Rethink_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Leejz's Portfolio",
@@ -13,12 +15,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" suppressHydrationWarning>
-        <body>
+        <html lang="en" suppressHydrationWarning >
+        <body className={rethinkSans.className}>
         <ThemeProvider
             attribute="class"
             defaultTheme="dark"
-            enableSystem
+            enableSystem={false}
             disableTransitionOnChange
         >
             {children}
