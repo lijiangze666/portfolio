@@ -14,10 +14,10 @@ const RecentProjects = () => {
                     <span className="text-purple">recent projects</span>
 
                 </h1>
-                <div className="flex flex-wrap items-center justify-center p-4 mt-10 gap-16">
+                <div className="flex flex-wrap items-center justify-center p-4 mt-10 gap-16" id="haha">
                     {projects.map((item) => (
                         <div
-                            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]  "
+                            className="lg:min-h-[32.5rem] lg:min-w-[592px] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw] "
                             key={item.id}
                         >
                             <PinContainer
@@ -25,11 +25,11 @@ const RecentProjects = () => {
                                 href={item.link}
                             >
                                 <div
-                                    className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+                                    className="relative flex items-center justify-center  mb-10">
                                     <img
                                         src={item.img}
                                         alt="cover"
-                                        className="z-10 absolute bottom-0 "
+                                        className="z-10  bottom-0 "
                                     />
                                 </div>
 
@@ -63,7 +63,8 @@ const RecentProjects = () => {
                                     </div>
 
                                     <div className="flex justify-center items-center">
-                                        <Link href={item.link} target="_blank" className="flex lg:text-xl md:text-xs text-sm text-purple">
+                                        <Link href={item.link} target="_blank"
+                                              className="flex lg:text-xl md:text-xs text-sm text-purple">
                                             Check Live Site
                                         </Link>
                                         <FaLocationArrow className="ms-3" color="#CBACF9"/>
