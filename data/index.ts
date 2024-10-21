@@ -1,7 +1,7 @@
 export const navItems = [
     {name: "Home", link: "/"},
-    {name: "About", link: "#about"},
-    {name: "Code", link: "#code"},
+    {name: "About", link: "#"},
+    {name: "Projects", link: "#projects"},
     {name: "Music", link: "#music"},
     {name: "Book", link: "#book"},
     {name: "Photography", link: "#photography"},
@@ -72,15 +72,15 @@ export const gridItems = [
 export const rolesData = [
     {
         name:"Front-end Developer",
-        href:"/"
+        href:"/projects"
     },
     {
         name:"Java Developer",
-        href:"/"
+        href:"/projects"
     },
     {
         name:"Web3 Developer",
-        href:"/"
+        href:"/projects"
     },
     {
         name:"Guitarist",
@@ -89,5 +89,40 @@ export const rolesData = [
     {
         name:"Photographer",
         href:"/"
+    },
+];
+
+export const projects = [
+    {
+        id: 1,
+        title: "A Car Showcase Website",
+        des: "Streamline your car rental experience with our effortless booking process.",
+        img: "/p1.jpg",
+        iconLists: ["/next.svg","/re.svg", "/tail.svg", "/ts.svg"],
+        link: "https://car-showcase-ten-ochre.vercel.app/",
+    },
+    {
+        id: 2,
+        title: "Krypt - A Dapp about Web3",
+        des: "A simple Dapp connected with the matemask wallet can transfer money and save the transfer record on the chain by calling a smart contract written in solidity.",
+        img: "/p2r.jpg",
+        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+        link: "/ui.yoom.com",
+    },
+    {
+        id: 3,
+        title: "AI Image SaaS - Canva Application",
+        des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+        img: "/p3.svg",
+        iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+        link: "/ui.aiimg.com",
+    },
+    {
+        id: 4,
+        title: "Animated Apple Iphone 3D Website",
+        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+        img: "/p4.svg",
+        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+        link: "/ui.apple.com",
     },
 ];
