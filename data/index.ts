@@ -69,3 +69,25 @@ export const gridItems = [
         spareImg: "",
     },
 ];
+export const rolesData = [
+    {
+        name:"Front-end Developer",
+        href:"/"
+    },
+    {
+        name:"Java Developer",
+        href:"/"
+    },
+    {
+        name:"Web3 Developer",
+        href:"/"
+    },
+    {
+        name:"Guitarist",
+        href:"/"
+    },
+    {
+        name:"Photographer",
+        href:"/"
+    },
+];

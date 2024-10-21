@@ -1,16 +1,21 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, {useState} from "react";
 import {CardBody, CardContainer, CardItem} from "@/components/ui/3d-card";
 import Link from "next/link";
 import {FlipWords} from "@/components/ui/FilpWords";
-import {Ma_Shan_Zheng} from "next/font/google";
-
-const maShanZheng = Ma_Shan_Zheng({weight: "400", subsets: ['latin']})
+import { rolesData } from '@/data/index';
 
 export function ThreeCard() {
     const names = ["Li Jiang Ze", "李姜泽"];
+    const customStyles = {
+        "李姜泽": {
+            fontFamily: "'STKaiti', '华文楷体', serif", // 使用华文楷体
+            fontSize: '1.1em',
+        }
+    };
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
     return (
         <CardContainer className="inter-var">
             <CardBody
@@ -30,6 +35,7 @@ export function ThreeCard() {
                         words={names}
                         duration={2000}
                         className="text-purple dark:text-purple inline-block"
+                        customStyles={customStyles}
                     />
                 </CardItem>
                 <CardItem
@@ -43,28 +49,30 @@ export function ThreeCard() {
                         translateZ="20"
                         className="text-2xl font-bold text-neutral-600 dark:text-white text-left w-full"
                     >
-                        I'm a:
+                        I&rsquo;m a:
                     </CardItem>
-                    <CardItem translateZ="20" as="p"
-                              className="flex px-4 py-2 dark:text-white ml-auto text-xl">
-                        Front-end  Developer
-                    </CardItem>
-                    <CardItem translateZ="20" as="p"
-                              className="flex px-4 py-2 dark:text-white ml-auto text-xl">
-                        Java Developer
-                    </CardItem>
-                    <CardItem translateZ="20" as="p"
-                              className="flex px-4 py-2 dark:text-white ml-auto text-xl">
-                        Web3 Developer
-                    </CardItem>
-                    <CardItem translateZ="20" as="p"
-                              className="flex px-4 py-2 dark:text-white ml-auto text-xl">
-                        Guitarist
-                    </CardItem>
-                    <CardItem translateZ="20" as="p"
-                              className="flex px-4 py-2 dark:text-white ml-auto text-xl">
-                        Photographer
-                    </CardItem>
+                    {rolesData.map((role, index) => (
+                        <CardItem
+                            key={index}
+                            translateZ="20"
+                            className="flex px-4 py-2 ml-auto text-xl w-full justify-end"
+                        >
+                            <Link
+                                href={role.href}
+                                className={`transition-all duration-300 ease-in-out transform ${
+                                    hoveredIndex === index
+                                        ? 'text-white dark:text-white scale-110'
+                                        : hoveredIndex !== null
+                                            ? 'text-gray-500 dark:text-gray-500'
+                                            : 'text-white dark:text-white'
+                                }`}
+                                onMouseEnter={() => setHoveredIndex(index)}
+                                onMouseLeave={() => setHoveredIndex(null)}
+                            >
+                                {role.name}
+                            </Link>
+                        </CardItem>
+                    ))}
                     <CardItem translateZ="50"
                               className="absolute bottom-0 left-0 px-4 dark:text-white">
                         <Image src="/avatar-modified.jpg" alt="avatar" width={100} height={100}/>
