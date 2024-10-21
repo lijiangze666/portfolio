@@ -32,7 +32,7 @@ const Hero = () => {
             <div className="flex justify-center relative my-20 z-10">
                 <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
                     <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-                        A Web Developer
+                        A Development Engineer
                     </p>
                     <TextGenerateEffect
                         words="Hi! I&apos;m Li Jiang Ze, a Web Developer based in Tianjin, China."
@@ -49,15 +49,15 @@ const Hero = () => {
                         />
                     </a>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-                     className="pointer-events-none absolute inset-0 h-full w-full -z-10 mt-10">
-                    <circle className="stroke-black/20 stroke-1 dark:stroke-white/20" cx="50%" cy="50%" r="310"
-                            fill="none"
-                            stroke-dasharray="4 4"></circle>
-                    <circle className="stroke-black/10 stroke-1 dark:stroke-white/10" cx="50%" cy="50%" r="360"
-                            fill="none" stroke-dasharray="4 4"></circle>
+                {/*<svg xmlns="http://www.w3.org/2000/svg" version="1.1"*/}
+                {/*     className="pointer-events-none absolute inset-0 h-full w-full -z-10 mt-10">*/}
+                {/*    <circle className="stroke-black/20 stroke-1 dark:stroke-white/20" cx="50%" cy="50%" r="310"*/}
+                {/*            fill="none"*/}
+                {/*            stroke-dasharray="4 4"></circle>*/}
+                {/*    <circle className="stroke-black/10 stroke-1 dark:stroke-white/10" cx="50%" cy="50%" r="360"*/}
+                {/*            fill="none" stroke-dasharray="4 4"></circle>*/}
 
-                </svg>
+                {/*</svg>*/}
 
             </div>
 

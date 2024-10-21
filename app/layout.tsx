@@ -1,9 +1,8 @@
 import type {Metadata} from "next";
 import "./globals.css";
 import {ThemeProvider} from "@/app/providers";
-import {Noto_Sans} from "next/font/google";
-
-const noto = Noto_Sans({subsets: ["latin"], weight: ["400", "700"]});
+import {Open_Sans} from "next/font/google";
+const open = Open_Sans({subsets: ["latin"], weight: ["400", "700"]});
 
 export const metadata: Metadata = {
     title: "Leejz's Portfolio",
@@ -17,7 +16,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" suppressHydrationWarning>
-        <body className={noto.className}>
+        <head>
+            <link rel="icon" href="/logo.png" sizes="any"/>
+        </head>
+        <body className={open.className}>
         <ThemeProvider
             attribute="class"
             defaultTheme="dark"
