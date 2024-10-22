@@ -35,13 +35,13 @@ const Hero = () => {
                         A Development Engineer
                     </p>
                     <TextGenerateEffect
-                        words="Hi! I&apos;m Li Jiang Ze, a Web Developer based in Tianjin, China."
+                        words="Hi! I&apos;m Li Jiang Ze, a Web Developer👨🏻‍💻 based in Tianjin, China📍."
                         className="text-center text-[40px] md:text-5xl lg:text-6xl"
                     />
                     <ThreeCard/>
 
 
-                    <a href="#about">
+                    <a href="#projects">
                         <MagicButton
                             title="Show my work"
                             icon={<FaLocationArrow/>}
