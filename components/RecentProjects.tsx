@@ -4,10 +4,11 @@ import {projects} from "@/data/index";
 import {FaLocationArrow} from "react-icons/fa";
 import {PinContainer} from "@/components/ui/Pin";
 import Link from "next/link";
+import AnimatedSection from "@/components/ui/AnimatedSection";
 
 const RecentProjects = () => {
     return (
-        <section id="projects">
+        <AnimatedSection id="projects">
             <div className="py-20">
                 <h1 className="heading">
                     A small selection of{" "}
@@ -75,7 +76,7 @@ const RecentProjects = () => {
                     ))}
                 </div>
             </div>
-        </section>
+        </AnimatedSection>
     );
 };
 
