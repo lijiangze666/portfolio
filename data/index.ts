@@ -8,7 +8,8 @@ export const navItems = [
 export const gridItems = [
     {
         id: 1,
-        title: "I prioritize client collaboration, fostering open communication ",
+        title: "\n" +
+            "I have a strong computer science foundation, write clean code, prioritize quality, and excel in documentation skills. ",
         description: "",
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
@@ -18,24 +19,24 @@ export const gridItems = [
     },
     {
         id: 2,
-        title: "I'm very flexible with time zone communications",
+        title: "Global mindset with diverse, multi-perspective problem-solving skills.",
         description: "",
-        className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+        className: "lg:col-span-2 md:col-span-3 md:row-span-8",
         imgClassName: "",
         titleClassName: "justify-start",
         img: "",
         spareImg: "",
     },
-    {
-        id: 3,
-        title: "My tech stack",
-        description: "I constantly try to improve",
-        className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-        imgClassName: "",
-        titleClassName: "justify-center",
-        img: "",
-        spareImg: "",
-    },
+    // {
+    //     id: 3,
+    //     title: "My tech stack",
+    //     description: "I constantly try to improve",
+    //     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    //     imgClassName: "",
+    //     titleClassName: "justify-center",
+    //     img: "",
+    //     spareImg: "",
+    // },
     {
         id: 4,
         title: "Tech enthusiast with a passion for development.",
@@ -49,12 +50,12 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "Currently building a JS Animation library",
-        description: "The Inside Scoop",
-        className: "md:col-span-3 md:row-span-2",
+        title: "My tech stack",
+        description: "I constantly try to improve",
+        className: "md:col-span-3 md:row-span-8 sm:row-span-8",
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-        titleClassName: "justify-center md:justify-start lg:justify-center",
-        img: "/b5.svg",
+        titleClassName: "justify-center md:justify-end md:item-end lg:justify-center ",
+        img: "",
         spareImg: "/grid.svg",
     },
     {
@@ -70,24 +71,24 @@ export const gridItems = [
 ];
 export const rolesData = [
     {
-        name:"Front-end Developer",
-        href:"/#projects"
+        name: "Front-end Developer",
+        href: "/#projects"
     },
     {
-        name:"Java Developer",
-        href:"/#projects"
+        name: "Java Developer",
+        href: "/#projects"
     },
     {
-        name:"Web3 Developer",
-        href:"/#projects"
+        name: "Web3 Developer",
+        href: "/#projects"
     },
     {
-        name:"Guitarist",
-        href:"/music"
+        name: "Guitarist",
+        href: "https://space.bilibili.com/454132577"
     },
     {
-        name:"Photographer",
-        href:"/photo"
+        name: "Photographer",
+        href: "/photo"
     },
 ];
 
@@ -97,7 +98,7 @@ export const projects = [
         title: "A Car Showcase Website",
         des: "Streamline your car rental experience with our effortless booking process.",
         img: "/p1.jpg",
-        iconLists: ["/next.svg","/re.svg", "/tail.svg", "/ts.svg"],
+        iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg"],
         link: "https://car-showcase-ten-ochre.vercel.app/",
     },
     {
@@ -105,7 +106,7 @@ export const projects = [
         title: "Krypt - A Dapp about Web3",
         des: "A Web3 DApp for connecting wallets, enabling secure transfers, recording transactions on-chain, and displaying transaction history transparently.",
         img: "/p2r.jpg",
-        iconLists: ["/re.svg", "/tail.svg", "/ethers.svg", "/solidity.svg","/hardhat.svg"],
+        iconLists: ["/re.svg", "/tail.svg", "/ethers.svg", "/solidity.svg", "/hardhat.svg"],
         link: "https://github.com/lijiangze666/krypt_dapp",
     },
     {
@@ -113,7 +114,7 @@ export const projects = [
         title: "crowFunding - A Web3 Crowdfunding App",
         des: "A Web3 DApp for crowdfunding projects, enabling campaign creation, donations, and tracking project information securely on the blockchain.",
         img: "/p3r.jpg",
-        iconLists: ["/next.svg","/re.svg", "/tail.svg", "/ts.svg", "/ethers.svg", "/solidity.svg","/hardhat.svg"],
+        iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/ethers.svg", "/solidity.svg", "/hardhat.svg"],
         link: "https://github.com/lijiangze666/crowdfunding",
     },
     {
@@ -132,7 +133,7 @@ export const testimonials = [
         name: "Code👨🏻‍💻",
         title: "About me - My code",
         img: "/github.svg",
-        link:"https://github.com/lijiangze666"
+        link: "https://github.com/lijiangze666"
     },
     {
         quote:
@@ -140,7 +141,7 @@ export const testimonials = [
         name: "Music🎸",
         title: "About me - My music",
         img: "/bilibili.svg",
-        link:"https://space.bilibili.com/454132577"
+        link: "https://space.bilibili.com/454132577"
     },
     {
         quote:
@@ -148,7 +149,7 @@ export const testimonials = [
         name: "Sports",
         title: "About me - My Exercise",
         img: "/sports.png",
-        link:""
+        link: ""
     },
     {
         quote:
@@ -156,40 +157,96 @@ export const testimonials = [
         name: "Photography",
         title: "About me - My photograph",
         img: "/camera.png",
-        link:""
+        link: ""
     },
 
 ];
-
-export const companies = [
+export const workExperience = [
     {
         id: 1,
-        name: "cloudinary",
-        img: "/cloud.svg",
-        nameImg: "/cloudName.svg",
+        title: "Frontend Engineer Intern",
+        desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+        className: "md:col-span-2",
+        thumbnail: "/exp1.svg",
     },
     {
         id: 2,
-        name: "appwrite",
-        img: "/app.svg",
-        nameImg: "/appName.svg",
+        title: "Mobile App Dev - JSM Tech",
+        desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+        className: "md:col-span-2", // change to md:col-span-2
+        thumbnail: "/exp2.svg",
     },
     {
         id: 3,
-        name: "HOSTINGER",
-        img: "/host.svg",
-        nameImg: "/hostName.svg",
+        title: "Freelance App Dev Project",
+        desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+        className: "md:col-span-2", // change to md:col-span-2
+        thumbnail: "/exp3.svg",
     },
     {
         id: 4,
-        name: "stream",
-        img: "/s.svg",
-        nameImg: "/streamName.svg",
+        title: "Lead Frontend Developer",
+        desc: "Developed and maintained user-facing features using modern frontend technologies.",
+        className: "md:col-span-2",
+        thumbnail: "/exp4.svg",
+    },
+];
+export const socialMedia = [
+    {
+        id: 1,
+        img: "/git.svg",
     },
     {
-        id: 5,
-        name: "docker.",
-        img: "/dock.svg",
-        nameImg: "/dockerName.svg",
+        id: 2,
+        img: "/twit.svg",
+    },
+    {
+        id: 3,
+        img: "/link.svg",
+    },
+];
+
+export const officialDataLeft = [
+    {
+        name: "ReactJs",
+        img: "/React-Light.svg",
+        link: "https://react.dev/",
+    },
+    {
+        name: "NextJs",
+        img: "/NextJS-Light.svg",
+        link: "https://nextjs.org/",
+    },
+    {
+        name: "VueJs",
+        img: "/VueJS-Light.svg",
+        link: "https://vuejs.org/",
+    },
+    {
+        name: "TypeScript",
+        img: "/TypeScript.svg",
+        link: "https://www.typescriptlang.org/",
+    },
+];
+export const officialDataRight = [
+    {
+        name: "TailWindCSS",
+        img: "/TailwindCSS-Light.svg",
+        link: "https://tailwindcss.com/",
+    },
+    {
+        name: "Java",
+        img: "/Java-Light.svg",
+        link: "https://www.java.com/zh-CN/",
+    },
+    {
+        name: "Solidity",
+        img: "/Solidity-sm.svg",
+        link: "https://soliditylang.org/",
+    },
+    {
+        name: "Database(SQL,NOSQL)",
+        img: "/database.png",
+        link: "https://en.wikipedia.org/wiki/Database",
     },
 ];
