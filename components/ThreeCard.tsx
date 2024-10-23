@@ -29,7 +29,7 @@ export function ThreeCard() {
                 <CardItem
                     as="div"
                     translateZ="100"
-                    className="w-full text-5xl font-bold mt-8 tracking-wider text-center h-[53px]"
+                    className="w-full text-5xl font-bold mt-8 tracking-wider text-center h-[53px] min-w-[299px]"
                 >
                     <FlipWords
                         words={names}
@@ -68,6 +68,7 @@ export function ThreeCard() {
                                 }`}
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
+                                target={role.name === 'Guitarist'? "_blank":""}
                             >
                                 {role.name}
                             </Link>
