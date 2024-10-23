@@ -29,7 +29,7 @@ export function ThreeCard() {
                 <CardItem
                     as="div"
                     translateZ="100"
-                    className="w-full text-5xl font-bold mt-8 tracking-wider text-center"
+                    className="w-full text-5xl font-bold mt-8 tracking-wider text-center h-[53px]"
                 >
                     <FlipWords
                         words={names}
