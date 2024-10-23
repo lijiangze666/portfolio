@@ -2,7 +2,7 @@ export const navItems = [
     {name: "Home", link: "/"},
     {name: "Projects", link: "#projects"},
     {name: "About", link: "#about"},
-    {name: "Book", link: "#book"},
+    {name: "Experience", link: "#experience"},
     {name: "Photography", link: "#photography"},
 ];
 export const gridItems = [
@@ -112,7 +112,7 @@ export const projects = [
         title: "Digital management of power grid",
         des: "Display power grid management data, the use of various management logic.",
         img: "/p4r.png",
-        iconLists: ["/vue.svg", "/js.svg", "/java.svg"],
+        iconLists: ["/vue.svg", "/js.svg", "/java.svg","/Spring-Light.svg"],
         link: "",
     },
 ];
@@ -154,32 +154,25 @@ export const testimonials = [
 export const workExperience = [
     {
         id: 1,
-        title: "Frontend Engineer Intern",
-        desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-        className: "md:col-span-2",
-        thumbnail: "/exp1.svg",
+        title: "Lead Frontend Developer",
+        desc: "As a Lead Front-End Developer, I built scalable web apps using React.js, Next.js, and Vue.js, integrated blockchain with Web3.js, mentored developers, and ensured high performance while collaborating with backend and design teams.",
+        className: "md:col-span-4",
+        thumbnail: "/exp3.svg",
     },
     {
         id: 2,
-        title: "Mobile App Dev - JSM Tech",
-        desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-        className: "md:col-span-2", // change to md:col-span-2
+        title: "Full Stack Developer",
+        desc: "As a Full-Stack Developer, I design and develop web applications using Vue.js, React.js, Java, Node.js, and Spring, focusing on performance, quality, and user experience throughout the development process.",
+        className: "md:col-span-4",
         thumbnail: "/exp2.svg",
     },
     {
         id: 3,
         title: "Freelance App Dev Project",
-        desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-        className: "md:col-span-2", // change to md:col-span-2
-        thumbnail: "/exp3.svg",
-    },
-    {
-        id: 4,
-        title: "Lead Frontend Developer",
-        desc: "Developed and maintained user-facing features using modern frontend technologies.",
-        className: "md:col-span-2",
+        desc: "As a Software Development Intern, I assisted in developing web applications using JavaScript and Java, collaborated with senior developers on code reviews, and contributed to debugging and optimizing software performance.",
+        className: "md:col-span-4",
         thumbnail: "/exp4.svg",
-    },
+    }
 ];
 export const socialMedia = [
     {

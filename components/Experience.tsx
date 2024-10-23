@@ -6,7 +6,7 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 
 const Experience = () => {
     return (
-        <AnimatedSection>
+        <AnimatedSection id="experience">
             <div className="py-20 w-full">
                 <h1 className="heading">
                     My <span className="text-purple">work experience</span>
