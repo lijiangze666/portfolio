@@ -123,7 +123,7 @@ export const BentoGridItem = ({
                 <div
                     className={cn(
                         titleClassName,
-                        "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-[20rem] flex flex-col  p-5 lg:p-10"
+                        "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-[30rem] flex flex-col  p-5 lg:p-10"
                     )}
                 >
 
@@ -145,7 +145,7 @@ export const BentoGridItem = ({
                     {id === 2 && <GridGlobe/>}
 
                     {id === 5 && (
-                        <div className="flex gap-1 lg:gap-5 w-fit absolute  lg:-right-2">
+                        <div className=" gap-1 lg:gap-5 w-fit flex lg:mt-20 md:mt-20 lg:-right-2 mt-20">
                             {/* tech stack lists */}
                             <div className="flex flex-col gap-3 -mt-8 md:mb-[60px] md:gap-3 lg:gap-8 ">
                                 {officialDataLeft.map((item, idx) => (
