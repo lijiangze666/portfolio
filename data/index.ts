@@ -1,10 +1,12 @@
-export const navItems = [
-    {name: "Home", link: "/"},
-    {name: "Projects", link: "#projects"},
-    {name: "About", link: "#about"},
-    {name: "Experience", link: "#experience"},
-    {name: "Photography", link: "#photography"},
-];
+
+// export const navItems = [
+//     {name: "Home", link: "/"},
+//     {name: "Projects", link: "#projects"},
+//     {name: "About", link: "#about"},
+//     {name: "Experience", link: "#experience"},
+//     {name: "Photography", link: "#photography"},
+//     {name: "Photography", link: "#photography",icon:<FaGithub />},
+// ];
 export const gridItems = [
     {
         id: 1,

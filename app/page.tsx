@@ -1,11 +1,19 @@
 import Hero from '@/components/Hero'
 import {FloatingNav} from "@/components/ui/FloatingNavbar";
-import { navItems } from "@/data";
 import Grid from "@/components/Grid";
 import RecentProjects from "@/components/RecentProjects";
 import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
+import {FaGithub} from "react-icons/fa";
+const navItems = [
+    {name: "Home", link: "/"},
+    {name: "Projects", link: "#projects"},
+    {name: "About", link: "#about"},
+    {name: "Experience", link: "#experience"},
+    {name: "Photography", link: "#photography"},
+    {name: "", link: "https://github.com/lijiangze666",icon:<FaGithub />},
+];
 export default function Home() {
     return (
         <main

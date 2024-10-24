@@ -1,24 +1,53 @@
-
+"use client";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "@/components/ui/MagicButton";
 import {FaLocationArrow} from "react-icons/fa";
 import {ThreeCard} from "@/components/ThreeCard";
+import {useEffect, useRef, useState} from "react";
 
 const Hero = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const heroRef = useRef(null);
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(false);
+                    // Use setTimeout to trigger a re-render after a short delay
+                    setTimeout(() => setIsVisible(true), 100);
+                }
+            },
+            {
+                threshold: 0.1 // Trigger when 10% of the hero is visible
+            }
+        );
+
+        if (heroRef.current) {
+            observer.observe(heroRef.current);
+        }
+
+        return () => {
+            if (heroRef.current) {
+                observer.unobserve(heroRef.current);
+            }
+        };
+    }, []);
     return (
-        <div className="pb-20 pt-36">
-            <div>
-                <Spotlight
-                    className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-                    fill="white"
-                />
-                <Spotlight
-                    className="h-[80vh] w-[50vw] top-10 left-full"
-                    fill="purple"
-                />
-                <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue"/>
-            </div>
+        <div ref={heroRef} className="pb-20 pt-36">
+            {isVisible && (
+                <div>
+                    <Spotlight
+                        className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+                        fill="white"
+                    />
+                    <Spotlight
+                        className="h-[80vh] w-[50vw] top-10 left-full"
+                        fill="purple"
+                    />
+                    <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue"/>
+                </div>
+            )}
             <div
                 className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center"
@@ -49,16 +78,6 @@ const Hero = () => {
                         />
                     </a>
                 </div>
-                {/*<svg xmlns="http://www.w3.org/2000/svg" version="1.1"*/}
-                {/*     className="pointer-events-none absolute inset-0 h-full w-full -z-10 mt-10">*/}
-                {/*    <circle className="stroke-black/20 stroke-1 dark:stroke-white/20" cx="50%" cy="50%" r="310"*/}
-                {/*            fill="none"*/}
-                {/*            stroke-dasharray="4 4"></circle>*/}
-                {/*    <circle className="stroke-black/10 stroke-1 dark:stroke-white/10" cx="50%" cy="50%" r="360"*/}
-                {/*            fill="none" stroke-dasharray="4 4"></circle>*/}
-
-                {/*</svg>*/}
-
             </div>
 
 

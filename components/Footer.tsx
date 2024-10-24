@@ -4,7 +4,6 @@ import {socialMedia} from "@/data";
 import { Highlight} from "@/components/ui/heroHighLight";
 import {useEffect, useRef, useState} from "react";
 import {AnimatedModal} from "@/components/AnimatedModal";
-import Link from "next/link";
 import Image from "next/image";
 
 const Footer = () => {
@@ -38,9 +37,9 @@ const Footer = () => {
         };
     }, []);
     return (
-        <footer ref={footerRef} className="w-full pt-20 pb-10" id="contact">
+        <footer ref={footerRef} className="w-full pt-5 pb-5" id="contact">
             {/* background grid */}
-            <div className="w-full absolute left-0 -bottom-72 min-h-96">
+            <div className="w-full absolute left-0 -bottom-10 min-h-96">
                 <img
                     src="/footer-grid.svg"
                     alt="grid"
@@ -72,7 +71,7 @@ const Footer = () => {
             </div>
             <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
                 <p className="md:text-base text-sm md:font-normal font-light">
-                    Copyright © 2024 Lee jz
+                    Lee jz & 李姜泽
                 </p>
 
                 <div className="flex items-center md:gap-3 gap-6">
