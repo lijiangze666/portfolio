@@ -80,7 +80,7 @@ export const rolesData = [
     },
     {
         name: "Photographer",
-        href: "/photo"
+        href: "/photography"
     },
 ];
 
@@ -145,7 +145,7 @@ export const testimonials = [
     },
     {
         quote:
-            "I am a passionate photographer who enjoys capturing the beauty and moments of everyday life through my lens📸. I believe that every photo tells a unique story, and I strive to preserve those special memories that bring joy and inspiration. Whether it's nature, people, or events, I love exploring different perspectives and sharing the beauty I see with others.",
+            "I am a passionate photographer who enjoys capturing the beauty and moments of everyday life through my lens📸. I believe that every photography tells a unique story, and I strive to preserve those special memories that bring joy and inspiration. Whether it's nature, people, or events, I love exploring different perspectives and sharing the beauty I see with others.",
         name: "Photography",
         title: "About me - My photograph",
         img: "/camera.png",
@@ -252,4 +252,13 @@ export const officialDataRight = [
         img: "/database.png",
         link: "https://en.wikipedia.org/wiki/Database",
     },
+];
+export const images = [
+    "/photo/1.jpg",
+    "/photo/2.jpg",
+    "/photo/3.jpg",
+    "/photo/4.jpg",
+    "/photo/5.jpg",
+    "/photo/6.jpg",
+
 ];
