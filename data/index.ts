@@ -80,7 +80,7 @@ export const rolesData = [
     },
     {
         name: "Photographer",
-        href: "/photography"
+        href: "/#photography"
     },
 ];
 
