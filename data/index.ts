@@ -178,14 +178,22 @@ export const socialMedia = [
     {
         id: 1,
         img: "/git.svg",
+        link: "https://github.com/lijiangze666",
     },
     {
         id: 2,
-        img: "/twit.svg",
+        img: "/tiktok.svg",
+        link:"https://www.douyin.com/user/MS4wLjABAAAAPK6mTrRKm020HbUkUGJgewbQWGISIYEbhnaNYJNHxxo",
     },
     {
         id: 3,
-        img: "/link.svg",
+        img: "/wechat.svg",
+        link:""
+    },
+    {
+        id: 4,
+        img: "/bilibili.svg",
+        link:"https://space.bilibili.com/454132577"
     },
 ];
 
