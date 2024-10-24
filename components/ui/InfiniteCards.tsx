@@ -3,6 +3,7 @@
 import {cn} from "@/lib/utils";
 import React, {useEffect, useState} from "react";
 import Link from 'next/link';
+import Image from "next/image";
 
 export const InfiniteMovingCards = ({
                                         items,
@@ -127,7 +128,8 @@ export const InfiniteMovingCards = ({
                                     </span>
                                     </div>
                                     <div className="w-12 h-12">
-                                        <img src={item.img} alt="logo"/>
+                                        <Image src={item.img} alt="logo" width={30} height={30}
+                                        />
                                     </div>
                                 </div>
                                 <span

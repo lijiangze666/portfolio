@@ -5,6 +5,7 @@ import {FaLocationArrow} from "react-icons/fa";
 import {PinContainer} from "@/components/ui/Pin";
 import Link from "next/link";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import Image from "next/image";
 
 const RecentProjects = () => {
     return (
@@ -27,10 +28,12 @@ const RecentProjects = () => {
                             >
                                 <div
                                     className="relative flex items-center justify-center  mb-10">
-                                    <img
+                                    <Image
                                         src={item.img}
                                         alt="cover"
                                         className="z-10  bottom-0 "
+                                        width={500}
+                                        height={500}
                                     />
                                 </div>
 
@@ -58,7 +61,7 @@ const RecentProjects = () => {
                                                     transform: `translateX(-${5 * index + 2}px)`,
                                                 }}
                                             >
-                                                <img src={icon} alt="icon5" className="p-2"/>
+                                                <Image src={icon} alt="icon5" className="p-2" width={30} height={30}/>
                                             </div>
                                         ))}
                                     </div>
