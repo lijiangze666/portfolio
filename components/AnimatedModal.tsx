@@ -14,8 +14,7 @@ export function AnimatedModal() {
     return (
         <div className="flex items-center justify-center">
             <Modal>
-                <ModalTrigger
-                    >
+                <ModalTrigger>
                     <MagicButton
                         otherClasses="flex justify-center group/modal-btn"
                         title="Contact me on Wechat"
