@@ -26,7 +26,7 @@ export default function Home() {
                 <RecentProjects/>
                 <Clients/>
                 <Experience/>
-                <Photography/>
+                {/*<Photography/>*/}
                 <Footer/>
             </div>
         </main>
