@@ -1,4 +1,4 @@
-"use server";
+"use client";
 import React from 'react';
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import {LayoutGridDemo} from "@/components/LayoutGridDemo";
