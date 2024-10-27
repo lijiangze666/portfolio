@@ -6,13 +6,13 @@ import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import {FaGithub} from "react-icons/fa";
-import Photography from "@/components/Photography";
+// import Photography from "@/components/Photography";
 const navItems = [
     {name: "Home", link: "/"},
     {name: "Projects", link: "#projects"},
     {name: "About", link: "#about"},
     {name: "Experience", link: "#experience"},
-    {name: "Photography", link: "#photography"},
+    // {name: "Photography", link: "#photography"},
     {name: "", link: "https://github.com/lijiangze666",icon:<FaGithub />},
 ];
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
                 <RecentProjects/>
                 <Clients/>
                 <Experience/>
-                <Photography/>
+                {/*<Photography/>*/}
                 <Footer/>
             </div>
         </main>
