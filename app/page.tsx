@@ -6,7 +6,7 @@ import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import {FaGithub} from "react-icons/fa";
-// import Photography from "@/components/Photography";
+import Photography from "@/components/Photography";
 const navItems = [
     {name: "Home", link: "/"},
     {name: "Projects", link: "#projects"},
@@ -26,7 +26,7 @@ export default function Home() {
                 <RecentProjects/>
                 <Clients/>
                 <Experience/>
-                {/*<Photography/>*/}
+                <Photography/>
                 <Footer/>
             </div>
         </main>
