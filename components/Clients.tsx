@@ -10,8 +10,7 @@ const Clients = () => {
     return (
         <AnimatedSection id="about" className="py-20">
             <h1 className="heading">
-                Something else
-                <span className="text-purple"> about me</span>
+                <span className="text-purple"> 关于我</span>
             </h1>
 
             <div className="flex flex-col items-center max-lg:mt-10">

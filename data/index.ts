@@ -10,8 +10,7 @@
 export const gridItems = [
     {
         id: 1,
-        title: "\n" +
-            "I have a strong computer science foundation, write clean code, prioritize quality, and excel in documentation skills. ",
+        title: "我有扎实的计算机科学基础，编写干净的代码，重视质量，并擅长文档编写技能。 ",
         description: "",
         className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
@@ -21,7 +20,7 @@ export const gridItems = [
     },
     {
         id: 2,
-        title: "Global mindset with diverse, multi-perspective problem-solving skills.",
+        title: "具有全球化思维，具有多角度解决问题的能力。",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-8 lg:row-span-4",
         imgClassName: "",
@@ -31,7 +30,7 @@ export const gridItems = [
     },
     {
         id: 4,
-        title: "I am a tech enthusiast with a strong passion for development, continuously learning and exploring new technologies to enhance my skills and creativity.",
+        title: "我是一个技术爱好者，对开发有强烈的热情，不断学习和探索新技术，提高自己的技能和创造力。",
         description: "",
         className: "lg:col-span-2 lg:row-span-1 md:col-span-3 md:row-span-1  ",
         imgClassName: "",
@@ -42,8 +41,8 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "My tech stack",
-        description: "I constantly try to improve",
+        title: "我的技术栈",
+        description: "我一直在努力提高",
         className: "md:col-span-3 md:row-span-8 lg:row-span-2 lg:col-span-3" ,
         imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
         titleClassName: "justify-center md:justify-start lg:justify-start sm:justify-start",
@@ -52,7 +51,7 @@ export const gridItems = [
     },
     {
         id: 6,
-        title: "Do you want to start a project together? Contact me!",
+        title: "如果觉得我可以合作，请联系我!",
         description: "",
         className: "lg:col-span-2 md:col-span-3 md:row-span-1 lg:row-span-1",
         imgClassName: "",
@@ -63,23 +62,23 @@ export const gridItems = [
 ];
 export const rolesData = [
     {
-        name: "Front-end Developer",
+        name: "Java后端开发工程师",
         href: "/#projects"
     },
     {
-        name: "Java Developer",
+        name: "前端开发工程师",
         href: "/#projects"
     },
+    // {
+    //     name: "Web3 Developer",
+    //     href: "/#projects"
+    // },
     {
-        name: "Web3 Developer",
-        href: "/#projects"
-    },
-    {
-        name: "Guitarist",
+        name: "吉他手",
         href: "https://space.bilibili.com/454132577"
     },
     {
-        name: "Photographer",
+        name: "摄影师",
         href: "/#about"
     },
 ];
@@ -87,32 +86,32 @@ export const rolesData = [
 export const projects = [
     {
         id: 1,
-        title: "A Car Showcase Website",
-        des: "Streamline your car rental experience with our effortless booking process.",
+        title: "汽车展示网站",
+        des: "通过我们轻松的预订流程简化您的租车体验。",
         img: "/p1.jpg",
         iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg"],
         link: "https://car-showcase-ten-ochre.vercel.app/",
     },
     {
         id: 2,
-        title: "Krypt - A Dapp about Web3",
-        des: "A Web3 DApp for connecting wallets, enabling secure transfers, recording transactions on-chain, and displaying transaction history transparently.",
+        title: "Krypt -一个关于钱包的Dapp",
+        des: "一个DApp，用于连接钱包，实现安全传输，记录链上交易，并透明地显示交易历史。",
         img: "/p2r.jpg",
         iconLists: ["/re.svg", "/tail.svg", "/ethers.svg", "/solidity.svg", "/hardhat.svg"],
         link: "https://github.com/lijiangze666/krypt_dapp",
     },
     {
         id: 3,
-        title: "crowFunding - A Web3 Crowdfunding App",
-        des: "A Web3 DApp for crowdfunding projects, enabling campaign creation, donations, and tracking project information securely on the blockchain.",
+        title: "Crowdfunding -一个众筹应用程序",
+        des: "用于众筹项目的DApp，可以在区块链上安全地创建活动，捐赠和跟踪项目信息。",
         img: "/p3r.jpg",
         iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/ethers.svg", "/solidity.svg", "/hardhat.svg"],
         link: "https://github.com/lijiangze666/crowdfunding",
     },
     {
         id: 4,
-        title: "Digital management of power grid",
-        des: "Display power grid management data, the use of various management logic.",
+        title: "电网数字化管理",
+        des: "显示电网管理数据，使用各种管理逻辑。",
         img: "/p4r.png",
         iconLists: ["/vue.svg", "/js.svg", "/java.svg","/Spring-Light.svg"],
         link: "",
@@ -121,33 +120,33 @@ export const projects = [
 export const testimonials = [
     {
         quote:
-            "A seasoned web developer passionate about crafting clean and dynamic websites. With 6 years of experience, I specialize in front-end and back-end development using HTML, CSS, JavaScript, and frameworks like React and Vue. I thrive on creating user-centric designs and optimizing performance for seamless browsing experiences.",
-        name: "Code👨🏻‍💻",
-        title: "About me - My code",
+            "一个经验丰富的web开发人员，热衷于制作干净和动态的网站。凭借6年的经验，我擅长使用框架进行前端和后端开发。我擅长创建以用户为中心的设计和优化无缝浏览体验的性能。",
+        name: "代码👨🏻‍💻",
+        title: "关于我-我的代码",
         img: "/github.svg",
         link: "https://github.com/lijiangze666"
     },
     {
         quote:
-            "I have a strong passion for music and singing🎤. I play the guitar🎸 and enjoy🎧️ folk and rock music, which have improved my focus and boosted my confidence. I often share videos on my social media, and I look forward to your support and feedback.",
-        name: "Music🎸",
-        title: "About me - My music",
+            "我对音乐和唱歌有强烈的热情🎤。我平常弹吉他🎸，喜欢🎧️民谣和摇滚音乐，音乐提高了我的注意力，增强了我的信心。我经常在我的社交媒体上分享视频，期待您的支持和反馈。",
+        name: "音乐🎸",
+        title: "关于我-我的音乐",
         img: "/bilibili.svg",
         link: "https://space.bilibili.com/454132577"
     },
     {
         quote:
-            "I really enjoy exercising and staying active. I often swim🏊🏻‍♂️, play badminton🏸, and go skiing🏂🏻. Regular physical activity has made me healthier and improved my focus. I also love meditation🧘🏻‍♂️, which has brought me many benefits.",
-        name: "Sports",
-        title: "About me - My Exercise",
+            "我很喜欢锻炼和坚持运动。我经常游泳🏊🏻‍♂️，打羽毛球🏸，滑雪🏂🏻。有规律的体育锻炼使我更健康，也提高了我的注意力。我还喜欢冥想🧘🏻‍♂️，这些给我我带来了很多好处。",
+        name: "体育",
+        title: "关于我-我的运动",
         img: "/sports.png",
         link: ""
     },
     {
         quote:
-            "I am a passionate photographer who enjoys capturing the beauty and moments of everyday life through my lens📸. I believe that every photography tells a unique story, and I strive to preserve those special memories that bring joy and inspiration. Whether it's nature, people, or events, I love exploring different perspectives and sharing the beauty I see with others.",
-        name: "Photography",
-        title: "About me - My photograph",
+            "我是一个充满激情的摄影师，喜欢通过我的镜头捕捉日常生活中的美丽和时刻📸。我相信每一张照片都讲述了一个独特的故事，我保存那些带来快乐和灵感的特殊记忆。无论是自然、人还是事件，我喜欢探索不同的视角，并与他人分享我所看到的美。",
+        name: "摄影",
+        title: "关于我-我的摄影",
         img: "/camera.png",
         link: ""
     },

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import {
   motion,
   AnimatePresence,
@@ -24,6 +24,10 @@ export const FloatingNav = ({
 
   // set true for the initial state so that nav bar is visible in the hero section
   const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    setVisible(true);  // Initialize visibility on the client
+  }, []);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number

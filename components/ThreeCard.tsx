@@ -24,7 +24,7 @@ export function ThreeCard() {
                     translateZ="20"
                     className="text-xl font-bold text-neutral-600 dark:text-white text-left w-full"
                 >
-                    My name is:
+                    姓名:
                 </CardItem>
                 <CardItem
                     as="div"
@@ -49,7 +49,7 @@ export function ThreeCard() {
                         translateZ="20"
                         className="text-2xl font-bold text-neutral-600 dark:text-white text-left w-full"
                     >
-                        I&rsquo;m a:
+                        我是:
                     </CardItem>
                     {rolesData.map((role, index) => (
                         <CardItem
@@ -68,7 +68,7 @@ export function ThreeCard() {
                                 }`}
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
-                                target={role.name === 'Guitarist'? "_blank":""}
+                                target={role.name === '吉他手'? "_blank":""}
                             >
                                 {role.name}
                             </Link>

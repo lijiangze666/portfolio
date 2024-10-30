@@ -17,6 +17,8 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
         <head>
+            <title>Leejz&rsquo;s Portfolio</title>
+            <meta name="description" content="Leejz's Portfolio"/>
             <link rel="icon" href="/logo.png" sizes="any"/>
         </head>
         <body className={open.className}>

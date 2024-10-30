@@ -12,8 +12,8 @@ const RecentProjects = () => {
         <AnimatedSection id="projects">
             <div className="py-20">
                 <h1 className="heading">
-                    A small selection of{" "}
-                    <span className="text-purple">recent projects</span>
+                    一小部分{" "}
+                    <span className="text-purple">最近的项目</span>
 
                 </h1>
                 <div className="flex flex-wrap items-center justify-center p-4 mt-10 gap-16" id="haha">
@@ -69,7 +69,7 @@ const RecentProjects = () => {
                                     <div className="flex justify-center items-center">
                                         <Link href={item.link} target="_blank"
                                               className="flex lg:text-xl md:text-xs text-sm text-purple">
-                                            Check Live Site
+                                            访问
                                         </Link>
                                         <FaLocationArrow className="ms-3" color="#CBACF9"/>
                                     </div>
