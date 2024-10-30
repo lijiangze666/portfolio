@@ -17,7 +17,7 @@ export function AnimatedModal() {
                 <ModalTrigger>
                     <MagicButton
                         otherClasses="flex justify-center group/modal-btn"
-                        title="Contact me on Wechat"
+                        title="微信联系"
                         icon={<IoLogoWechat />}
                         position="right"
                     />
@@ -26,7 +26,7 @@ export function AnimatedModal() {
                 <ModalBody>
                     <ModalContent className="justify-center items-center">
                         <div className="flex flex-col justify-start items-center">
-                            <p className="flex justify-center items-center">My Wechat QR Code</p>
+                            <p className="flex justify-center items-center">我的微信二维码</p>
                             <Image src="/qrcode-tm.png" alt="qr" width={300} height={300}></Image>
                         </div>
                     </ModalContent>

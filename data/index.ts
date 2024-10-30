@@ -155,22 +155,22 @@ export const testimonials = [
 export const workExperience = [
     {
         id: 1,
-        title: "Lead Frontend Developer",
-        desc: "As a Lead Front-End Developer, I built scalable web apps using React.js, Next.js, and Vue.js, integrated blockchain with Web3.js, mentored developers, and ensured high performance while collaborating with backend and design teams.",
+        title: "全栈开发工程师",
+        desc: "作为一名全栈开发人员，根据业务对程序进行设计，使用前端框架及后端框架进行开发，同时指导初级开发人员，并在积极团队协作的同时确保高性能。",
         className: "md:col-span-4",
         thumbnail: "/exp3.svg",
     },
     {
         id: 2,
-        title: "Full Stack Developer",
-        desc: "As a Full-Stack Developer, I design and develop web applications using Vue.js, React.js, Java, Node.js, and Spring, focusing on performance, quality, and user experience throughout the development process.",
+        title: "Java开发工程师",
+        desc: "作为一名Java开发人员，我使用Spring框架，设计和开发web应用程序，并在整个开发过程中关注性能，质量和用户体验。",
         className: "md:col-span-4",
         thumbnail: "/exp2.svg",
     },
     {
         id: 3,
-        title: "Freelance App Dev Project",
-        desc: "As a Software Development Intern, I assisted in developing web applications using JavaScript and Java, collaborated with senior developers on code reviews, and contributed to debugging and optimizing software performance.",
+        title: "软件开发实习生",
+        desc: "作为软件开发实习生，我协助使用JavaScript和Java开发web应用程序，与高级开发人员合作进行代码审查，并参与调试和优化软件性能。",
         className: "md:col-span-4",
         thumbnail: "/exp4.svg",
     }

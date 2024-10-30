@@ -52,16 +52,15 @@ const Footer = () => {
             <div className="flex flex-col">
                 <div className=" flex items-start justify-start">
                     <p className="text-3xl md:text-3xl text-left  w-2/3">
-                        I&rsquo;m collaborating with individuals from diverse fields, which is precisely why I created
-                        this website.{" "}
+                        我需要让人们更好的了解我，这正是我创作这个网站的原因。{" "}
                         {isVisible && (
                             <Highlight className="text-black dark:text-white">
-                                Feel free to contact me.
+                                请随时与我联系。
                             </Highlight>
                         )}
                         {!isVisible && (
                             <span className="text-black dark:text-white">
-                                Feel free to contact me.
+                                请随时与我联系。
                             </span>
                         )}
                     </p>
